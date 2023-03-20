@@ -17,4 +17,19 @@ module.exports = {
     },
     hot: true,
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: "style-loader"
+          },
+          {
+            loader: "css-loader"
+          }
+        ]
+      }
+    ]
+  }
 };
